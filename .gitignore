@@ -1,1 +1,5 @@
 nfm/target/
+make-files/
+script-protection/target
+script-protection/temporary*
+Cargo.lock
