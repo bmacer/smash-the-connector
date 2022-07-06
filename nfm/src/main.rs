@@ -20,6 +20,7 @@ fn main() {
 
         let ip = format!("http://{}.{}.{}.{}", a, b, c, d);
         println!("Calling {}", ip);
+        thread::sleep(Duration::from_millis(250));
 
         let x = match client.get(&ip).send() {
             Ok(v) => v,
