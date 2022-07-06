@@ -4,8 +4,12 @@ import time
 import shutil
 import os
 
-while True:	
-	with open(f".\\files\\evil_file_{i}.exe", "w") as outfile:
+i = 0
+while True:
+	i += 1
+	filename = f".\\files\\evil_file_{i}.exe"
+	print(f"Making {filename}")
+	with open(filename, "w") as outfile:
 		b = ""
 		for _ in range(10000):
 			b += random.choice(string.ascii_lowercase)
